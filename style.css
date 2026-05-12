@@ -123,8 +123,30 @@ nav a:hover {
   text-align: center;
 }
 .hero-text {
-  color: white;
   text-align: center;
-  margin-top: 15px;
+  color: white;
+  margin-top: 30px;
   line-height: 1.8;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  color: #ddd;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+.hero-text h2 {
+  color: white;
 }
