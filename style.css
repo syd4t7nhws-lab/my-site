@@ -146,7 +146,84 @@ nav a:hover {
   padding: 20px;
   width: 250px;
   border-radius: 10px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 .hero-text h2 {
   color: white;
+}
+
+.progress {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.progress ul {
+  padding-left: 20px;
+}
+
+.progress li {
+  margin-bottom: 10px;
+}
+
+.works {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-card {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+section {
+  margin-top: 60px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay1 {
+  animation-delay: 0.2s;
+}
+
+.delay2 {
+  animation-delay: 0.4s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
 }
