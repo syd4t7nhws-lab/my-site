@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f2f5;
+  background-color: #111;
   font-family: Arial, sans-serif;
   padding: 30px;
 }
@@ -14,12 +14,20 @@ h2 {
 }
 
 p {
-  color: #666;
+  color: #555;
   line-height: 1.6;
 }
 .container {
   max-width: 600px;
   margin: 0 auto;
+}
+
+.container h1 {
+  color: #ccc;
+}
+
+.container p {
+  color: #ccc;
 }
 
 .card {
@@ -72,7 +80,7 @@ header {
   h2 {
     font-size: 20px;
   }
-
+  
   .btn {
     display: block;
     text-align: center;
@@ -100,6 +108,8 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: rgba(30,30,30,0.7);
+  backdrop-filter: blur(10px);
 }
 
 nav a {
@@ -142,12 +152,21 @@ nav a:hover {
 }
 
 .card {
-  background-color: white;
-  padding: 20px;
+  background-color: #1c1c1e;
+  padding: 30px;
   width: 250px;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: 0.3s;
 }
+
+.card h2 {
+  color: white;
+}
+
+.card p {
+  color: #ccc;
+}
+
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -177,6 +196,7 @@ nav a:hover {
   margin-top: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: white;
 }
 
 .work-card {
@@ -203,10 +223,11 @@ section {
   margin-top: 60px;
 }
 
-.fade-in {
+.fade-up {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(40px);
   animation: fadeIn 1s ease forwards;
+  transition: all 1s ease;
 }
 
 @keyframes fadeIn {
@@ -214,6 +235,11 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+fade-up.show{
+  opacity: 1;
+  transform: translateY(0)
 }
 
 .delay1 {
@@ -253,4 +279,70 @@ section {
   display: block;
   margin: 50px auto 0;
   border-radius: 20px;
+}
+
+.cards-section {
+  background-color: #f5f5f7;
+  padding: 100px 20px;
+}
+
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 100px 20px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.split-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.split-text {
+  max-width: 500px;
+}
+
+.split-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.split-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.progress,
+.feature-card {
+  background-color: #1c1c1e;
+  color: white;
+}
+
+.progress p,
+.feature-card p {
+  color: #ccc;
+}
+
+.progress h2,
+.feature-card h2 {
+  color: white;
+}
+
+.card:hover,
+.feature-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
 }
