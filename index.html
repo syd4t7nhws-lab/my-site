@@ -6,12 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">ホーム</a>
-    <a href="detail.html">挑戦</a>
-    <a href="tools.html">おすすめ</a>
-    <a href="contact.html">お問い合わせ</a>
-  </nav>
+  <header>
+   <nav>
+     <div class="hamburger">☰</div>
+
+     <div class="nav-links">
+       <a href="index.html">ホーム</a>
+       <a href="detail.html">挑戦</a>
+       <a href="tools.html">おすすめ</a>
+       <a href="contact.html">お問い合わせ</a>
+     </div>
+   </nav>
+  </header> 
+
   <section class="apple-hero">
 
     <h1>YUDAI BLOG</h1>
@@ -24,7 +31,7 @@
       挑戦を見る
     </a>
 
-    <img src="profile.jpg" alt="プロフィール画像" class="apple-image fade-in">
+    <img src="images/profile.jpg" alt="プロフィール画像" class="apple-image fade-in">
 
   </section>
   
@@ -72,21 +79,27 @@
      <li>✅ スマホ対応</li>
      <li>✅ Flexboxで横並びレイアウト作成</li>
    </ul>
+
+   <div class="log-button">
+     <a href="log.html" class="btn">
+      制作ログを見る
+     </a>
+   </div>
  </section>
 
- <section class="works">
+ <section class="works-section">
 
-   <div class="work-card glass fade-up delay1">
+   <div class="work-card fade-up delay1">
      <h3>🌐 Webサイト公開</h3>
      <p>GitHub Pagesを使って公開。</p>
    </div>
 
-   <div class="work-card glass fade-up delay2">
+   <div class="work-card fade-up delay2">
      <h3>🎨 デザイン改善</h3>
      <p>CSSでレイアウトや色を調整。</p>
    </div>
 
-   <div class="work-card glass fade-up delay3">
+   <div class="work-card fade-up delay3">
      <h3>⚡ JavaScript</h3>
      <p>ボタンに動きを追加。</p>
    </div>
@@ -102,8 +115,8 @@
      <h2>挑戦を積み上げる</h2>
 
      <p>
-      eBay、Web制作、発信。<br>
-      小さくても継続して前に進む。
+       eBay、Web制作、発信。<br>
+       小さくても継続して前に進む。
      </p>
 
      <a href="detail.html" class="btn">

@@ -18,17 +18,17 @@
 
      <p>質問や相談があればお気軽にどうぞ</p>
 
-     <form>
+     <form action="https://formspree.io/f/xykablge" method="POST">
          <label>名前</label><br>
-         <input type="text"><br><br>
+         <input type="text" id="name" name="name" placeholder="お名前を入力"><br><br>
 
          <label>メールアドレス</label><br>
-         <input type="email"><br><br>
+         <input type="email" id="email" name="email" placeholder="example@email.com"><br><br>
 
          <label>内容</label><br>
-         <textarea rows="5"></textarea><br><br>
+         <textarea id="message" rows="5" name="message" placeholder="お問い合わせを入力"></textarea><br><br>
 
-         <button type="button" class="btn" onclick="showMessage()">送信</button>
+         <button type="submit" class="btn">送信</button>
      </form>
   </div>
   <script src="script.js"></script>
